@@ -238,7 +238,6 @@
                         <h3>YawP^3: Yaw-invariant Parametrization and Panoramic Planar reconstruction</h3>
                         <p style="font-size:18px">
                         Cheng Sun, Chi-Wei Hsiao, Ning-Hsu Wang, Min Sun, Hwann-Tzong Chen<br>
-                        <a href="/research/yaw.pdf">[paper]</a>
                         </p>
                         <p style="font-size:14px">
                         This paper presents the first method for indoor planar reconstruction from a panoramic image. We leverage three unique characteristics in indoor scenes: 1) most planar surfaces are either horizontal or vertical, 2) the 2D orientation of vertical planes co-vary with the change of the yaw angle of the camera, and 3) most vertical planes share common 2D orientations. To inherently ingrain these priors, our model first segments horizontal/vertical planes (HV-planes) for separate treatments. Most importantly, we propose a novel yaw-invariant parameterization for vertical planes to solve the yaw ambiguity problem of 360 and effectively cluster vertical planar segments with a shared 2D orientation. Finally, we fuse the predicted geometry information and plane instance segmentation into a piece-wise planar reconstruction. We evaluate our method on our newly extracted panoramic piece-wise HV-planar dataset derived from three large-scale RGB-D panorama datasets. For benchmark baselines, we train two state-of-the-art planar models on our dataset with modifications to help them adapt to our 360 HV-planar dataset. Our method significantly outperforms all baselines and achieves superior visually pleasing reconstruction of indoor scenes.
@@ -254,7 +253,7 @@
                         <h3></h3>
                         <p style="font-size:18px">
                         Chi-Wei Hsiao, Cheng Sun, Min Sun, Hwann-Tzong Chen<br>
-                        <a href="/research/specialize_fuse.pdf">[paper]</a>
+                        <a href="/research/old_specialize_fuse.pdf">[paper]</a>
                         </p>
                         <p style="font-size:14px">
                         We present a novel pyramidal `output' representation for the task of semantic segmentation which is inspired by the observation that features at different scales are good at predicting different region. The semantic output is in pyramidal form, and we train the model to only activates at the coarsest possible cells in the pyramid so that only one pyramid level is responsible for each pixel and different pyramid levels could specialize in the assigned pixels. In addition, we design a coarse-to-fine contextual module that accords with the essence of our pyramidal output representation. We validate the effectiveness of each key module in our method through extensive ablation studies. Our approach achieves state-of-the-art performance on ADE20K, COCO-Stuff 10K and Pascal-Context.
@@ -269,7 +268,7 @@
                     <div class="col-xs-9">
                         <h3></h3>
                         <p style="font-size:18px">
-                        Cheng Sun, Chi-Wei Hsiao, Min Sun, Hwann-Tzong Chen<br>
+                        Chi-Wei Hsiao, Cheng Sun, Min Sun, Hwann-Tzong Chen<br>
                         <a href="https://arxiv.org/abs/1905.12571">[paper]</a>
                         </p>
                         <p style="font-size:14px">
