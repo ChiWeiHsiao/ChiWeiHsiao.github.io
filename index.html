@@ -251,12 +251,14 @@
                         <img src="/research/yaw.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="image lost">
                     </div>
                     <div class="col-xs-9">
-                        <h3>YawP^3: Yaw-invariant Parametrization and Panoramic Planar reconstruction</h3>
+                        <h3>Indoor Panorama Planar 3D Reconstruction via Divide and Conquer</h3>
                         <p style="font-size:18px">
                         Cheng Sun, Chi-Wei Hsiao, Ning-Hsu Wang, Min Sun, Hwann-Tzong Chen<br>
+                        CVPR 2021 Oral,
+                        <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sun_Indoor_Panorama_Planar_3D_Reconstruction_via_Divide_and_Conquer_CVPR_2021_paper.pdf">[paper]</a>
                         </p>
                         <p style="font-size:14px">
-                        This paper presents the first method for indoor planar reconstruction from a panoramic image. We leverage three unique characteristics in indoor scenes: 1) most planar surfaces are either horizontal or vertical, 2) the 2D orientation of vertical planes co-vary with the change of the yaw angle of the camera, and 3) most vertical planes share common 2D orientations. To inherently ingrain these priors, our model first segments horizontal/vertical planes (HV-planes) for separate treatments. Most importantly, we propose a novel yaw-invariant parameterization for vertical planes to solve the yaw ambiguity problem of 360 and effectively cluster vertical planar segments with a shared 2D orientation. Finally, we fuse the predicted geometry information and plane instance segmentation into a piece-wise planar reconstruction. We evaluate our method on our newly extracted panoramic piece-wise HV-planar dataset derived from three large-scale RGB-D panorama datasets. For benchmark baselines, we train two state-of-the-art planar models on our dataset with modifications to help them adapt to our 360 HV-planar dataset. Our method significantly outperforms all baselines and achieves superior visually pleasing reconstruction of indoor scenes.
+                        Indoor panorama typically consists of human-made structures parallel or perpendicular to gravity. We leverage this phenomenon to approximate the scene in a 360-degree image with (H)orizontal-planes and (V)ertical-planes. To this end, we propose an effective divide-and-conquer strategy that divides pixels based on their plane orientation estimation; then, the succeeding instance segmentation module conquers the task of planes clustering more easily in each plane orientation group. Besides, parameters of V-planes depend on camera yaw rotation, but translation-invariant CNNs are less aware of the yaw change. We thus propose a yaw-invariant V-planar reparameterization for CNNs to learn. We create a benchmark for indoor panorama planar reconstruction by extending existing 360 depth datasets with ground truth H&V-planes (referred to as “PanoH&V” dataset) and adopt state-of-the-art planar reconstruction methods to predict H&V-planes as our baselines. Our method outperforms the baselines by a large margin on the proposed dataset.
                         </p>
                     </div>
                 </div>
