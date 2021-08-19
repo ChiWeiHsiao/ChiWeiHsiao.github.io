@@ -214,14 +214,14 @@
                 <!-- Project -->
                 <div class="row" style="display: flex;">
                     <div class="col-xs-3 content-align">
-                        <img src="/research/specialize_and_fuse.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="image lost">
+                        <img src="/research/Specialize_and_Fuse.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="image lost">
                     </div>
                     <div class="col-xs-9">
                         <h3>Specialize and Fuse: Pyramidal Output Representation for Semantic Segmentation</h3>
                         <p style="font-size:18px">
                         Chi-Wei Hsiao, Cheng Sun, Min Sun, Hwann-Tzong Chen<br>
                         ICCV 2021,
-                        <a href="https://arxiv.org/abs/2108.01866">[paper]</a>
+                        <a href="/research/Specialize_and_Fuse.pdf">[paper]</a>
                         </p>
                         <p style="font-size:14px">
                         We present a novel pyramidal output representation to ensure parsimony with our "specialize and fuse" process for semantic segmentation. A pyramidal "output" representation consists of coarse-to-fine levels, where each level is "specialize" in a different class distribution (e.g., more stuff than things classes at coarser levels). Two types of pyramidal outputs (i.e., unity and semantic pyramid) are "fused" into the final semantic output, where the unity pyramid indicates unity-cells (i.e., all pixels in such cell share the same semantic label). The process ensures parsimony by predicting a relatively small number of labels for unity-cells (e.g., a large cell of grass) to build the final semantic output. In addition to the "output" representation, we design a coarse-to-fine contextual module to aggregate the "features" representation from different levels. We validate the effectiveness of each key module in our method through comprehensive ablation studies. Finally, our approach achieves state-of-the-art performance on three widely-used semantic segmentation datasets -- ADE20K, COCO-Stuff, and Pascal-Context.
